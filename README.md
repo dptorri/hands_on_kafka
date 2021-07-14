@@ -60,7 +60,7 @@ micronaut:
 
 1.2.2 Add a simple enum for the `ShipmentStatus`:
 ```
-package codes.recursive.domain;
+package com.example.domain;
 
 public enum ShipmentStatus {
     PENDING, SHIPPED

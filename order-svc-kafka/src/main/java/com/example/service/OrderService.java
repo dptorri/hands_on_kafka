@@ -1,6 +1,6 @@
-package codes.recursive.service;
+package com.example.service;
 
-import codes.recursive.domain.Order;
+import com.example.domain.Order;
 
 import javax.inject.Singleton;
 import java.util.ArrayList;
