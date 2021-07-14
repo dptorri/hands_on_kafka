@@ -53,7 +53,8 @@ micronaut:
   server:
     port: 8080
 ``` 
-1.2 create a class to represent the Order in a package called domain and add 4 properties: 
+1.2 Creating a Domain, Service, and Controller
+create a class to represent the Order in a package called domain and add 4 properties: 
 `id`, `customerId`, `totalCost` and `shipmentStatus` Add a constructor and getters/setters
 
 1.3 Add a simple enum for the `ShipmentStatus`:
