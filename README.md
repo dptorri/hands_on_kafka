@@ -54,10 +54,11 @@ micronaut:
     port: 8080
 ``` 
 1.2 Creating a Domain, Service, and Controller
-create a class to represent the Order in a package called domain and add 4 properties: 
+
+1.2.1 create a class to represent the Order in a package called domain and add 4 properties: 
 `id`, `customerId`, `totalCost` and `shipmentStatus` Add a constructor and getters/setters
 
-1.3 Add a simple enum for the `ShipmentStatus`:
+1.2.2 Add a simple enum for the `ShipmentStatus`:
 ```
 package codes.recursive.domain;
 
@@ -65,18 +66,18 @@ public enum ShipmentStatus {
     PENDING, SHIPPED
 }
 ```
-
-1.4 create an OrderService to simulate a proper persistence tier.
+1.2.3 create an OrderService to simulate a proper persistence tier.
 Use a simple List to store orders in memory whilst the service is running.
 
-1.5 The OrderController will have methods for listing orders, getting a single order, 
+1.2.4 The OrderController will have methods for listing orders, getting a single order, 
 creating a new order, and updating an existing order. Nothing fancy, just a way to invoke 
 our OrderService methods.
 
-1.6 basic order microservice is now ready for action. We can start it up with:
+1. basic order microservice is now ready for action. We can start it up with:
 ```
 ./gradlew run -Dmicronaut.environments=local
 ```
+
 ### 2. Testing
 2.1 First, let's add a few orders. Note that the ShipmentStatus will default to PENDING, 
 so there is no need to pass that in when creating a new order.
