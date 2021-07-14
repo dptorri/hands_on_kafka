@@ -1,0 +1,5 @@
+micronaut:
+  application:
+    name: orderSvc
+  server:
+    port: 8080

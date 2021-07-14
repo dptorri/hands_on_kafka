@@ -1,4 +1,4 @@
 micronaut:
   application:
-    name: kafkademo
+    name: orderSvcKafka
 kafka.bootstrap.servers: localhost:9092
